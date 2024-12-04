@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 44,
+    "spacing": 4,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/arch",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "clock",
+        "custom/poweroff"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+    "custom/arch": {
+        "format": "󰣇",
+        "on-click": "hyprlock",
+        "tooltip": true,
+        "tooltip-format": "Lock Screen"
+    },
+    "clock": {
+        "format": "{:%d/%m/%Y | %H:%M}",
+        "tooltip": false
+    },
+    "custom/poweroff": {
+        "format": "󰐥",
+        "on-click": "systemctl poweroff",
+        "tooltip": true,
+        "tooltip-format": "Power Off"
+    },
+    "hyprland/window": {
+        "fixed-center" : true
+    }
+}
